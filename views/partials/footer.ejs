@@ -1,0 +1,61 @@
+<div id="footer" class="relative h-1/2 bg-red-600 font-bold text-center text-black flex justify-center items-center">
+    <div class="w-full grid grid-cols-5  items-center mx-16">
+        <div class="flex justify-start md:text-">
+            <ul>
+                <li><a href="/home">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/home#workoutPlans">Programs</a></li>
+                <li><a href="/">Blog</a></li>
+                <li><a href="/">Contact</a></li>
+            </ul>
+        </div>
+        <a class="text-6xl md:text-10xl goldman col-span-3 " href="#">Arjun</a>
+        <div class="flex justify-end">
+            <ul class="w-min">
+                <li><span class="border-b-2 border-black font-bold text-xl">Programs</span></li>
+                <li><a class="m-2">Fat Loss</a></li>
+                <li><a class="m-2">Bulking</a></li>
+                <li><a class="">Body Recomposition</a></li>
+            </ul>
+        </div>
+    </div>
+    <h1 class=" absolute bottom-2 text-xs">© 2035 by Arjun Kumar. Powered and secured by Dharani I S</h1>
+
+</div>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = {
+    theme: {
+        extend: {
+        animation: {
+            'infinite-scroll': 'infinite-scroll 25s linear infinite',
+        },
+        keyframes: {
+            'infinite-scroll': {
+            from: { transform: 'translateX(0)' },
+            to: { transform: 'translateX(-100%)' },
+            }
+        },
+        fontSize: {
+            '10xl': '10rem',
+        }                    
+        },
+    },
+    }
+
+function myFunction() {
+  document.getElementById("dropdown").classList.toggle("hidden");
+}
+
+window.onclick = function(e) {
+  if (!e.target.matches('#menu-button')) {
+  var myDropdown = document.getElementById("dropdown");
+    if (!myDropdown.classList.contains('hidden')) {
+      myDropdown.classList.toggle('hidden');
+    }
+  }
+}
+</script>
+<script src="" async defer></script>
+</body>
+</html>

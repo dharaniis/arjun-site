@@ -1,0 +1,105 @@
+html{
+    scroll-behavior: smooth;
+}
+
+#navbar{
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.goldman {
+    font-family: "Goldman", sans-serif;
+  }
+  
+body {
+    background-color: black;
+    color: white;
+}
+
+
+#heroHome{
+    height: 92vh;
+    min-height: fit-content;
+}
+
+#myVideo{
+    position: absolute;
+    z-index: -1;
+    opacity: 30%;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#quote{
+    height: 22vh;
+    min-height: 150px;
+
+}
+
+#aboutMe {
+    height: 100vh;
+    min-height: 500px;
+}
+
+.picContainer{
+    height: 100vh;
+}
+
+#saket{
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    right: 0;
+    object-fit: cover;
+    opacity: 50%;
+}
+
+.m-200{
+    margin-right: 200px;
+}
+
+.m-50{
+    margin-top: 50px;
+}
+
+
+#aboutText{
+    min-width: 400px;
+}
+
+#infiniteProgram{
+    border-style: solid none;
+}
+
+.greendot{
+    height: 8px;
+    width: 8px;
+    margin-right: 8px;
+    border-radius: 4px;
+    background-color: #4ab74a;
+}
+
+#plansContent{
+    height: fit-content;
+}
+
+#contactForm{
+    margin: 100px 0;
+}
+
+#footer{
+    height: 40vh;
+}
+
+.plus9xl{
+    font-size: 10rem;
+}
+
+#saketAboutPic{
+    width: 70%;
+    height: 70%;
+    object-fit: contain;
+
+}

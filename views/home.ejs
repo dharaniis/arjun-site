@@ -1,0 +1,318 @@
+<%- include("partials/header.ejs") %>
+
+        <div id="heroHome" class="flex flex-col justify-center items-center text-center">
+            <video autoplay muted loop id="myVideo" class="absolute -z-1">
+                <source src="gym.mp4" type="video/mp4">
+              </video>
+            <h1 class="text-6xl  my-5 goldman">"Your Fitness Odyssey Begins Here"</h1>
+            <h1 class="text-xl my-4 goldman text-white">ARJUN KUMAR - ONLINE FITNESS COACH</h1>
+            <button type="button" onclick="location.href='#workoutPlans';" class="goldman px-7 text-red-600 hover:text-white border border-red-600 hover:bg-red-600 focus:ring-4 focus:outline-none focus:ring-red-300 text-sm px-5 py-2.5 text-center me-2 mb-2">Get Started</button>
+        </div>
+        <div id="quote" class="bg-red-700 flex justify-center items-center flex-nowrap">
+            <h1 class="text-4xl font-thin text-center">"WHAT SEEMS IMPOSSIBLE TODAY WILL SOON BECOME YOUR WARM-UP"</h1>
+        </div>
+        <div id="aboutMe" class="flex flex-row justify-center items-center flex-nowrap">
+            <div class="picContainer basis-1/2 ">
+                <img src="saket.jpg" id="saket" class="">
+            </div>
+            <div class="flex flex-col basis-1/2 mx-10" id="aboutText">
+                <h1 class="goldman text-3xl text-red-600">About Me</h1>
+                <h1 class="goldman text-5xl font-bold">Arjun Kumar</h1>
+                <p class="m-200 m-50">I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. Feel free to drag and drop me anywhere you like on your page.<br><br>I’m a great place for you to tell a story and let your users know a little more about you.</p>
+            </div>
+        </div>
+        <div id="workoutPlans" class="h-fit md:h-screen">
+            <div class="w-full inline-flex flex-nowrap border-4 border-red-700 overflow-hidden" id="infiniteProgram">
+                <ul class="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll">
+                    <li class="text-6xl goldman my-4">Programs</li>
+                    <li class="text-6xl goldman my-4">Programs</li>
+                    <li class="text-6xl goldman my-4">Programs</li>
+                    <li class="text-6xl goldman my-4">Programs</li>
+                </ul>
+                <ul class="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll" aria-hidden="true">
+                    <li class="text-6xl goldman my-4">Programs</li>
+                    <li class="text-6xl goldman my-4">Programs</li>
+                    <li class="text-6xl goldman my-4">Programs</li>
+                    <li class="text-6xl goldman my-4">Programs</li>
+                </ul>
+            </div>
+            <h1 class="text-5xl text-red-700 text-center goldman p-10 m-3">Explore our goal based programs</h1>
+            <div class="mt-5 flex flex-col justify-center" id="plansContent">       
+                <div class="flex flex-wrap justify-center m-5 gap-10" id="planCards">
+                    <div class="w-96 rounded-lg overflow-hidden shadow-lg bg-gray-800">
+                        <img class="h-48 w-full" src="/fat2fit.jpg" alt="fat to fit man">
+                        <div class="flex flex-col items-center py-4">
+                        <div class="font-bold text-xl mb-2 text-center ">Fat Loss Program</div>
+                        <h1 class="text-gray-400">Diet • BEGINNER • 30 Mins</h1>
+                        <a href="#" class="w-20 inline-flex items-center mt-2 px-3 py-2 text-sm font-medium text-center text-white bg-slate-700 rounded-lg hover:bg-slate-800 focus:ring-4 focus:outline-none focus:ring-slate-300 dark:bg-slate-600 dark:hover:bg-slate-700 dark:focus:ring-slate-800">
+                            <div class="greendot"></div>JOIN</a>
+                        </div>
+                    </div>
+                    <div class="w-96 rounded-lg overflow-hidden shadow-lg bg-gray-800">
+                        <img class="h-48 w-full" src="/bulking.jpg" alt="fat to fit man">
+                        <div class="flex flex-col items-center py-4">
+                        <div class="font-bold text-xl mb-2 text-center">Bulking Program</div>
+                        <h1 class="text-gray-400">Diet • BEGINNER • 45 Mins</h1>
+                        <a href="#" class="w-20 inline-flex items-center mt-2 px-3 py-2 text-sm font-medium text-center text-white bg-slate-700 rounded-lg hover:bg-slate-800 focus:ring-4 focus:outline-none focus:ring-slate-300 dark:bg-slate-600 dark:hover:bg-slate-700 dark:focus:ring-slate-800">
+                            <div class="greendot"></div>JOIN</a>
+                        </div>
+                    </div>
+                    <div class="w-96 rounded-lg overflow-hidden shadow-lg bg-gray-800">
+                        <img class="h-48 w-96" src="/recomp.jpg" alt="fat to fit man">
+                        <div class="flex flex-col items-center py-4">
+                        <div class="font-bold text-xl mb-2 text-center">Body Recomposition Program</div>
+                        <h1 class="text-gray-400">Diet • BEGINNER • 50 Mins</h1>
+                        <a href="#" class="w-20 inline-flex items-center mt-2 px-3 py-2 text-sm font-medium text-center text-white bg-slate-700 rounded-lg hover:bg-slate-800 focus:ring-4 focus:outline-none focus:ring-slate-300 dark:bg-slate-600 dark:hover:bg-slate-700 dark:focus:ring-slate-800">
+                            <div class="greendot"></div>JOIN</a>
+                        </div>
+                </div>                
+            </div>
+            </div>
+        </div>
+        <div id="pricingPlans" class="bg-black">
+            <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
+                <div class="mx-auto max-w-screen-md text-center mb-8 lg:mb-12">
+                    <h1 class="goldman text-6xl tracking-tight text-red-600">Choose a plan thats right for you</h1>
+                    <p class="mb-5 font-light text-gray-500 sm:text-xl dark:text-gray-400">These carefully designed pricing plans offer the perfect blend of flexibility, support, and personalization to cater to a wide range of fitness goals.</p>
+                </div>
+                <div class="space-y-8 lg:grid lg:grid-cols-3 sm:gap-6 xl:gap-10 lg:space-y-0">
+                    <!-- Pricing Card -->
+                    <div class="flex flex-col p-6 mx-auto max-w-lg text-center text-gray-900 bg-white rounded-lg border border-gray-100 shadow dark:border-gray-600 xl:p-8 dark:bg-gray-950 dark:text-white">
+                        <h3 class="mb-4 text-2xl  text-red-600 goldman">Basic Plan</h3>
+                        <p class="font-light text-gray-500 sm:text-lg dark:text-gray-400">Students looking for budget-friendly, self-paced learning without direct trainer interaction.</p>
+                        <div class="flex justify-center items-baseline my-8">
+                            <span class="mr-2 text-5xl font-extrabold">$29</span>
+                            <span class="goldman text-red-600 text-gray-500">/month</span>
+                        </div>
+                        <!-- List -->
+                        <ul role="list" class="mb-8 space-y-4 text-left">
+                            <li class="flex items-center space-x-3">
+                                <!-- Icon -->
+                                <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                <span>Access to recorded workout sessions (3 per week)</span>
+                            </li>
+                            <li class="flex items-center space-x-3">
+                                <!-- Icon -->
+                                <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                <span>Monthly fitness challenges</span>
+                            </li>
+                            <li class="flex items-center space-x-3">
+                                <!-- Icon -->
+                                <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                <span>Access to a community forum for general Q&A and support</span></span>
+                            </li>
+                            <li class="flex items-center space-x-3">
+                                <!-- Icon -->
+                                <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                <span>Monthly fitness newsletter with tips and motivation</span></span>
+                            </li>
+                            <li class="flex items-center space-x-3">
+                                <!-- Icon -->
+                                <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                <span>Basic tracking tools (e.g., workout logs and goal setting)</span></span>
+                            </li>
+                        </ul>
+                        <a href="#" class="text-white focus:ring-4 font-medium rounded-lg text-sm px-5 py-2.5 text-center bg-slate-800 bg-slate-600 hover:bg-slate-700 focus:ring-slate-800">Get started</a>
+                    </div>
+                    <!-- Pricing Card -->
+                    <div class="flex flex-col p-6 mx-auto max-w-lg text-center text-gray-900 bg-white rounded-lg border border-gray-100 shadow dark:border-gray-600 xl:p-8 dark:bg-gray-950 dark:text-white">
+                        <h3 class="mb-4 text-2xl  text-red-600 goldman">Standard Plan</h3>
+                        <p class="font-light text-gray-500 sm:text-lg dark:text-gray-400">Clients who want more structure and live sessions for motivation and accountability.</p>
+                        <div class="flex justify-center items-baseline my-8">
+                            <span class="mr-2 text-5xl font-extrabold">$49</span>
+                            <span class="goldman text-red-600 text-gray-500">/month</span>
+                        </div>
+                        <!-- List -->
+                        <ul role="list" class="mb-8 space-y-4 text-left">
+                            <li class="flex items-center space-x-3">
+                                <!-- Icon -->
+                                <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                <span>All benefits of the Basic Plan</span>
+                            </li>
+                            <li class="flex items-center space-x-3">
+                                <!-- Icon -->
+                                <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                <span>Access to live group workout sessions (5 per week)</span>
+                            </li>
+                            <li class="flex items-center space-x-3">
+                                <!-- Icon -->
+                                <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                <span>Weekly progress tracking with feedback via email</span></span>
+                            </li>
+                            <li class="flex items-center space-x-3">
+                                <!-- Icon -->
+                                <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                <span>Nutrition tips and a monthly meal plan</span></span>
+                            </li>
+                            <li class="flex items-center space-x-3">
+                                <!-- Icon -->
+                                <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                <span>Access to an exclusive online library of beginner to intermediate workout routines</span></span>
+                            </li>
+                        </ul>
+                        <a href="#" class="text-white focus:ring-4 font-medium rounded-lg text-sm px-5 py-2.5 text-center bg-slate-800 hover:bg-slate-700 focus:ring-slate-800">Get started</a>
+                    </div>
+                    <!-- Pricing Card -->
+                    <div class="flex flex-col p-6 mx-auto max-w-lg text-center text-gray-900 bg-white rounded-lg border border-gray-100 shadow dark:border-gray-600 xl:p-8 dark:bg-gray-950 dark:text-white">
+                        <h3 class="mb-4 text-2xl  text-red-600 goldman">Premium Plan</h3>
+                        <p class="font-light text-gray-500 sm:text-lg dark:text-gray-400">Clients seeking personalized guidance and direct trainer interaction for quicker and more specific results.</p>
+                        <div class="flex justify-center items-baseline my-8">
+                            <span class="mr-2 text-5xl font-extrabold">$119</span>
+                            <span class="goldman text-red-600 text-gray-500 ">/month</span>
+                        </div>
+                        <!-- List -->
+                        <ul role="list" class="mb-8 space-y-4 text-left">
+                            <li class="flex items-center space-x-3">
+                                <!-- Icon -->
+                                <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                <span>All benefits of the Standard Plan</span>
+                            </li>
+                            <li class="flex items-center space-x-3">
+                                <!-- Icon -->
+                                <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                <span>Personalized fitness plan tailored to individual goals</span>
+                            </li>
+                            <li class="flex items-center space-x-3">
+                                <!-- Icon -->
+                                <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                <span>1-on-1 virtual training sessions (2 per month)</span></span>
+                            </li>
+                            <li class="flex items-center space-x-3">
+                                <!-- Icon -->
+                                <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                <span>Exclusive Q&A sessions with the trainer</span></span>
+                            </li>
+                            <li class="flex items-center space-x-3">
+                                <!-- Icon -->
+                                <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                <span>Priority support via direct messaging. Personalized video feedback.</span></span>
+                            </li>
+                        </ul>
+                        <a href="#" class="text-white focus:ring-4 font-medium rounded-lg text-sm px-5 py-2.5 text-center bg-slate-800 hover:bg-slate-700 focus:ring-slate-800">Get started</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="testimonials" class="h-fit">
+            <h1 class="goldman text-6xl m-5 mx-16 text-red-600 text-center">Success Stories</h1>
+            <div class="grid mb-8 mt-16 rounded-lg shadow-sm  md:mb-12 md:grid-cols-2 ">
+                <figure class="flex flex-col items-center justify-center p-8 text-center   rounded-t-lg md:rounded-t-none md:rounded-ss-lg ">
+                    <blockquote class="max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400">
+                        <h3 class="text-lg font-semibold text-gray-900 dark:text-white">"The best coach I’ve worked with!"</h3>
+                        <p class="my-4">“Arjun's personalized programs made all the difference in my fitness journey. His workouts are challenging yet enjoyable, and I could see real progress within weeks. Highly recommend!”</p>
+                    </blockquote>
+                    <figcaption class="flex items-center justify-center ">
+                        <img class="rounded-full w-9 h-9" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/karen-nelson.png" alt="profile picture">
+                        <div class="space-y-0.5 font-medium dark:text-white text-left rtl:text-right ms-3">
+                            <div>Ritika K.</div>
+                            <div class="text-sm text-gray-500 dark:text-gray-400 ">Developer at Open AI</div>
+                        </div>
+                    </figcaption>    
+                </figure>
+                <figure class="flex flex-col items-center justify-center p-8 text-center   rounded-t-lg md:rounded-t-none md:rounded-ss-lg ">
+                    <blockquote class="max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400">
+                        <h3 class="text-lg font-semibold text-gray-900 dark:text-white">"Always motivating and supportive."</h3>
+                        <p class="my-4">“Arjun not only provides effective workout plans but also keeps me motivated throughout. His constant check-ins and encouragement helped me stay on track even on tough days.”</p>
+                    </blockquote>
+                    <figcaption class="flex items-center justify-center ">
+                        <img class="rounded-full w-9 h-9" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/roberta-casas.png" alt="profile picture">
+                        <div class="space-y-0.5 font-medium dark:text-white text-left rtl:text-right ms-3">
+                            <div>Pooja M.</div>
+                            <div class="text-sm text-gray-500 dark:text-gray-400">Lead designer at Dropbox</div>
+                        </div>
+                    </figcaption>    
+                </figure>
+                <figure class="flex flex-col items-center justify-center p-8 text-center   rounded-t-lg md:rounded-t-none md:rounded-ss-lg  ">
+                    <blockquote class="max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400">
+                        <h3 class="text-lg font-semibold text-gray-900 dark:text-white">"Incredible results in just 3 months!"</h3>
+                        <p class="my-4">“Arjun’s program completely changed my lifestyle. I lost 10kg and gained strength and confidence. He makes fitness feel easy to fit into a busy schedule.”</p>
+                    </blockquote>
+                    <figcaption class="flex items-center justify-center ">
+                        <img class="rounded-full w-9 h-9" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/jese-leos.png" alt="profile picture">
+                        <div class="space-y-0.5 font-medium dark:text-white text-left rtl:text-right ms-3">
+                            <div>Rahul S.</div>
+                            <div class="text-sm text-gray-500 dark:text-gray-400">Software Engineer at Facebook</div>
+                        </div>
+                    </figcaption>    
+                </figure>
+                <figure class="flex flex-col items-center justify-center p-8 text-center   rounded-t-lg md:rounded-t-none md:rounded-ss-lg  ">
+                    <blockquote class="max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400">
+                        <h3 class="text-lg text-center font-semibold text-gray-900 dark:text-white">"Perfect balance of fitness and nutrition."</h3>
+                        <p class="my-4">“Arjun goes beyond workouts by offering insightful nutrition tips that complement his training perfectly. His holistic approach is exactly what I needed.”</p>
+                    </blockquote>
+                    <figcaption class="flex items-center justify-center ">
+                        <img class="rounded-full w-9 h-9" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/joseph-mcfall.png" alt="profile picture">
+                        <div class="space-y-0.5 font-medium dark:text-white text-left rtl:text-right ms-3">
+                            <div>Karan T.</div>
+                            <div class="text-sm text-gray-500 dark:text-gray-400">CTO at Google</div>
+                        </div>
+                    </figcaption>    
+                </figure>
+            </div>
+        </div>
+        <div id="contactForm" class="">
+            <div class="grid sm:grid-cols-2 items-start gap-16 p-4 mx-auto max-w-4xl  font-[sans-serif]">
+                <div>
+                    <h1 class="text-red-700 text-7xl  goldman">Let's Talk</h1>
+                    <p class="text-sm text-gray-500 mt-4">Have some big idea or brand to develop and need help? Then reach out we'd love to hear about your project  and provide help.</p>
+    
+                    <div class="mt-12">
+                        <h2 class="text-white text-base font-bold">Email</h2>
+                        <ul class="mt-4">
+                            <li class="flex items-center">
+                                <div class="bg-[#e6e6e6cf] p-1 h-10 w-10 rounded-full flex items-center justify-center shrink-0">
+                                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M14.5 9.50012H9.5M3.02832 10.0001L10.2246 14.8167C10.8661 15.2444 11.1869 15.4582 11.5336 15.5413C11.8399 15.6147 12.1593 15.6147 12.4657 15.5413C12.8124 15.4582 13.1332 15.2444 13.7747 14.8167L20.971 10.0001M10.2981 4.06892L4.49814 7.71139C3.95121 8.05487 3.67775 8.2266 3.4794 8.45876C3.30385 8.66424 3.17176 8.90317 3.09111 9.16112C3 9.45256 3 9.77548 3 10.4213V16.8001C3 17.9202 3 18.4803 3.21799 18.9081C3.40973 19.2844 3.71569 19.5904 4.09202 19.7821C4.51984 20.0001 5.0799 20.0001 6.2 20.0001H17.8C18.9201 20.0001 19.4802 20.0001 19.908 19.7821C20.2843 19.5904 20.5903 19.2844 20.782 18.9081C21 18.4803 21 17.9202 21 16.8001V10.4213C21 9.77548 21 9.45256 20.9089 9.16112C20.8282 8.90317 20.6962 8.66424 20.5206 8.45876C20.3223 8.2266 20.0488 8.05487 19.5019 7.71139L13.7019 4.06891C13.0846 3.68129 12.776 3.48747 12.4449 3.41192C12.152 3.34512 11.848 3.34512 11.5551 3.41192C11.224 3.48747 10.9154 3.68129 10.2981 4.06892Z" stroke="#b91c1b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+                                </div>
+                                <a href="javascript:void(0)" class="text-white text-sm ml-4">
+                                    <small class="block">Mail</small>
+                                    <strong>info@example.com</strong>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+    
+                    <div class="mt-12">
+                        <h2 class="text-white text-base font-bold">Socials</h2>
+    
+                        <ul class="flex mt-4 space-x-4">
+                            <li class="bg-[#e6e6e6cf] h-10 w-10 rounded-full flex items-center justify-center shrink-0">
+                                <a href="javascript:void(0)">
+                                    <div class="bg-[#e6e6e6cf] p-4 h-10 w-10 rounded-full flex items-center justify-center shrink-0">
+                                        <svg fill="#b91c1b" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid" viewBox="0 0 14.906 32"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M14.874,11.167 L14.262,14.207 C14.062,15.208 13.100,15.992 12.072,15.992 L10.000,15.992 L10.000,30.000 C10.000,31.104 9.159,32.000 8.049,32.000 L5.030,32.000 C3.920,32.000 3.017,31.102 3.017,29.999 L3.017,15.992 L2.011,15.992 C0.901,15.992 -0.002,15.095 -0.002,13.991 L-0.002,10.990 C-0.002,9.887 0.901,8.989 2.011,8.989 L3.017,8.989 L3.017,6.003 C3.017,2.716 5.693,0.041 8.994,0.013 C9.015,0.012 9.033,0.001 9.055,0.001 L13.081,0.001 C13.636,0.001 14.000,0.448 14.000,1.000 L14.000,6.000 C14.000,6.553 13.636,7.004 13.081,7.004 L10.061,7.004 L10.060,8.989 L13.079,8.989 C13.645,8.989 14.167,9.228 14.509,9.644 C14.852,10.059 14.985,10.615 14.874,11.167 ZM9.092,10.990 C9.078,10.991 9.067,10.998 9.053,10.998 L9.053,10.998 C8.497,10.997 8.046,10.549 8.047,9.997 L8.047,9.990 C8.047,9.990 8.047,9.990 8.047,9.990 C8.047,9.990 8.047,9.990 8.047,9.990 L8.049,6.003 C8.049,5.450 8.499,5.003 9.055,5.003 L12.074,5.003 L12.074,2.002 L9.094,2.002 C9.077,2.002 9.063,2.011 9.045,2.011 C6.831,2.011 5.030,3.802 5.030,6.003 L5.030,10.005 C5.030,10.558 4.579,11.006 4.023,11.006 C3.996,11.006 3.973,10.992 3.946,10.990 L2.011,10.990 L2.011,13.991 L4.023,13.991 C4.579,13.991 5.030,14.439 5.030,14.992 C5.030,15.044 5.008,15.088 5.000,15.138 L5.000,30.000 L8.049,29.999 L8.049,15.002 C8.049,14.998 8.047,14.995 8.047,14.992 C8.047,14.439 8.497,13.991 9.053,13.991 L12.072,13.991 C12.145,13.991 12.275,13.886 12.288,13.816 L12.857,10.990 L9.092,10.990 Z"></path> </g></svg>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="bg-[#e6e6e6cf] h-10 w-10 rounded-full flex items-center justify-center shrink-0">
+                                <a href="javascript:void(0)">
+                                    <div class="bg-[#e6e6e6cf] p-2 h-10 w-10 rounded-full flex items-center justify-center shrink-0">
+                                        <svg fill="#b91c1b" viewBox="0 0 256 256" id="Flat" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M96,120.001v56a12,12,0,1,1-24,0v-56a12,12,0,0,1,24,0Zm28,68a12,12,0,0,0,12-12v-28a16,16,0,0,1,32,0v28a12,12,0,1,0,24,0v-28a39.9747,39.9747,0,0,0-58.57324-35.40992A11.99182,11.99182,0,0,0,112,120.001v56A12,12,0,0,0,124,188.001ZM232,44V212a20.0226,20.0226,0,0,1-20,20H44a20.0226,20.0226,0,0,1-20-20V44A20.02244,20.02244,0,0,1,44,24H212A20.02244,20.02244,0,0,1,232,44Zm-24,4H48V208H208ZM84,96A16,16,0,1,0,68,80,16.00016,16.00016,0,0,0,84,96Z"></path> </g></svg>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="bg-[#e6e6e6cf] h-10 w-10 rounded-full flex items-center justify-center shrink-0">
+                                <a href="javascript:void(0)">
+                                    <div class="bg-[#e6e6e6cf] p-2 h-10 w-10 rounded-full flex items-center justify-center shrink-0">
+                                        <svg fill="#b91c1b" viewBox="0 0 32 32" id="Camada_1" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <path d="M22.3,8.4c-0.8,0-1.4,0.6-1.4,1.4c0,0.8,0.6,1.4,1.4,1.4c0.8,0,1.4-0.6,1.4-1.4C23.7,9,23.1,8.4,22.3,8.4z"></path> <path d="M16,10.2c-3.3,0-5.9,2.7-5.9,5.9s2.7,5.9,5.9,5.9s5.9-2.7,5.9-5.9S19.3,10.2,16,10.2z M16,19.9c-2.1,0-3.8-1.7-3.8-3.8 c0-2.1,1.7-3.8,3.8-3.8c2.1,0,3.8,1.7,3.8,3.8C19.8,18.2,18.1,19.9,16,19.9z"></path> <path d="M20.8,4h-9.5C7.2,4,4,7.2,4,11.2v9.5c0,4,3.2,7.2,7.2,7.2h9.5c4,0,7.2-3.2,7.2-7.2v-9.5C28,7.2,24.8,4,20.8,4z M25.7,20.8 c0,2.7-2.2,5-5,5h-9.5c-2.7,0-5-2.2-5-5v-9.5c0-2.7,2.2-5,5-5h9.5c2.7,0,5,2.2,5,5V20.8z"></path> </g> </g></svg>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+    
+                <form class="ml-auto space-y-4">
+                    <input type='text' placeholder='Name'
+                        class="w-full rounded-md py-3 px-4 bg-gray-100 text-gray-800 text-sm outline-blue-500 focus:bg-transparent" />
+                    <input type='email' placeholder='Email'
+                        class="w-full rounded-md py-3 px-4 bg-gray-100 text-gray-800 text-sm outline-blue-500 focus:bg-transparent" />
+                    <input type='text' placeholder='Subject'
+                        class="w-full rounded-md py-3 px-4 bg-gray-100 text-gray-800 text-sm outline-blue-500 focus:bg-transparent" />
+                    <textarea placeholder='Message' rows="6"
+                        class="w-full rounded-md px-4 bg-gray-100 text-gray-800 text-sm pt-3 outline-blue-500 focus:bg-transparent"></textarea>
+                    <button type='button'
+                        class="text-white bg-red-600 hover:bg-red-700 tracking-wide rounded-md text-sm px-4 py-3 w-full !mt-6">Send</button>
+                </form>
+            </div>
+        </div>
+
+<%- include("partials/footer.ejs") %>
