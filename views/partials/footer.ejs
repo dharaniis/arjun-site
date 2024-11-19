@@ -47,6 +47,11 @@ function myFunction() {
   document.getElementById("dropdown").classList.toggle("hidden");
 }
 
+function myFunction2() {
+  document.getElementById("navList").classList.toggle("hidden");
+  document.getElementById("navbar").classList.toggle("bg-red-600");
+}
+
 window.onclick = function(e) {
   if (!e.target.matches('#menu-button')) {
   var myDropdown = document.getElementById("dropdown");
