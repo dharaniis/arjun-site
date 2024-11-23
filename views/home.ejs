@@ -1,18 +1,18 @@
 <%- include("partials/header.ejs") %>
 
-        <div id="homeHero" class="flex flex-col justify-center items-center text-center">
-            <video autoplay muted loop id="myVideo" class="absolute -z-1">
-                <source src="gym.mp4" type="video/mp4">
+        <div id="homeHero" class="h-[92vh] relative md:static flex flex-col justify-center items-center text-center">
+            <video playsinline autoplay="autoplay" muted loop="loop" id="myVideo" class="absolute z-[-1] object-cover right-0 bottom-0 opacity-30 w-full h-full">
+                <source src="gym.mp4" type="video/mp4" >
               </video>
-            <h1 class="text-6xl  my-5 goldman">"Your Fitness Odyssey Begins Here"</h1>
-            <h1 class="text-xl my-4 goldman text-white">ARJUN KUMAR - ONLINE FITNESS COACH</h1>
-            <button type="button" onclick="location.href='#workoutPlans';" class="goldman px-7 text-red-600 hover:text-white border border-red-600 hover:bg-red-600 focus:ring-4 focus:outline-none focus:ring-red-300 text-sm px-5 py-2.5 text-center me-2 mb-2">Get Started</button>
+            <h1 class="text-[50px] leading-none md:text-6xl  goldman">"Your Fitness Odyssey Begins Here"</h1>
+            <h1 class="text-sm md:text-xl my-4 goldman text-white">ARJUN KUMAR - ONLINE FITNESS COACH</h1>
+            <button type="button" onclick="location.href='#workoutPlans';" class="goldman text-xs px-5 py-2 md:px-7 md:py-2.5 text-red-600 hover:text-white border border-red-600 hover:bg-red-600 focus:ring-4 focus:outline-none focus:ring-red-300 md:text-sm  text-center me-2 mb-2">Get Started</button>
         </div>
         <div id="quote" class="h-fit py-10 md:py-20 bg-red-700 flex justify-center items-center flex-nowrap">
             <h1 class="text-[1.3rem] md:text-4xl font-thin text-center">"WHAT SEEMS IMPOSSIBLE TODAY WILL SOON BECOME YOUR WARM-UP"</h1>
         </div>
         <div id="aboutMe" class="grid grid-cols-1 md:grid-cols-2 h-fit md:h-screen justify-center items-center">
-            <div class="picContainer">
+            <div id="picContainer" class="h-screen">
                 <img src="saket.jpg" id="saket" class="w-full h-full object-cover opacity-50 bottom-0 right-0">
             </div>
             <div class="flex flex-col my-10 md:mx-10 items-center md:items-start" id="aboutText">
