@@ -2,7 +2,6 @@ html{
     scroll-behavior: smooth;
 }
 
-
 .goldman {
     font-family: "Goldman", sans-serif;
   }
@@ -11,10 +10,6 @@ body {
     background-color: black;
     color: white;
 }
-
-
-
-
 
 #aboutText{
     min-width: 400px;
@@ -30,12 +25,6 @@ body {
     margin-right: 8px;
     border-radius: 4px;
     background-color: #4ab74a;
-}
-
-
-
-#footer{
-    height: 40vh;
 }
 
 
