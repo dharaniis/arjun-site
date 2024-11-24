@@ -5,16 +5,16 @@
         <h1 class="text-4xl mt-16">All Posts</h1>
     </div>
     <div id="blogPostsContainer" class="h-fit mb-16 mt-7 flex justify-center">
-        <div id="blogPostsGrid"class="h-fit gap-10 grid grid-cols-1 md:grid-cols-3 ">
-            <a href="/blogpost?id=1"><div class="w-96 border-2 border-black">
+        <div id="blogPostsGrid"class="h-fit gap-10 grid grid-cols-1 md:grid-cols-3 justify-center items-center">
+            <a href="/blogpost?id=1"><div class="w-80 md:w-96 border-2 border-black">
                 <img class="object-cover h-[255px]" src="<%=blogPostsArr[0].image%>.JPG">
                 <div class="m-5">
                     <p class="text-left text-xs m-2"><%= blogPostsArr[0].datenDetails%></p>
                     <h1 class="text-xl font-bold"><%= blogPostsArr[0].title%></h1>
-                    <p><%=(blogPostsArr[0].content).slice(0, 150)%>....</p>
+                    <p><%=(blogPostsArr[0].content).slice(0, 149)%>....</p>
                 </div>
             </div></a>
-            <a href="/blogpost?id=2"><div class="w-96 border-2 border-black">
+            <a href="/blogpost?id=2"><div class="w-80 md:w-96 border-2 border-black">
                 <img class="object-cover h-[255px]" src="<%=blogPostsArr[1].image%>.JPG">
                 <div class="m-5">
                     <p class="text-left text-xs m-2"><%= blogPostsArr[1].datenDetails%></p>
@@ -22,7 +22,7 @@
                     <p><%=(blogPostsArr[1].content).slice(0, 150)%>....</p>
                 </div>
             </div></a>
-            <a href="/blogpost?id=3"><div class="w-96 border-2 border-black">
+            <a href="/blogpost?id=3"><div class="w-80 md:w-96 border-2 border-black">
                 <img class="object-cover h-[255px]" src="<%=blogPostsArr[2].image%>.JPG">
                 <div class="m-5">
                     <p class="text-left text-xs m-2"><%= blogPostsArr[2].datenDetails%></p>
@@ -30,7 +30,7 @@
                     <p><%=(blogPostsArr[2].content).slice(0, 150)%>....</p>
                 </div>
             </div></a>
-            <a href="/blogpost?id=4"><div class="w-96 border-2 border-black">
+            <a href="/blogpost?id=4"><div class="w-80 md:w-96 border-2 border-black">
                 <img class="object-cover h-[255px]" src="<%=blogPostsArr[3].image%>.JPG">
                 <div class="m-5">
                     <p class="text-left text-xs m-2"><%= blogPostsArr[3].datenDetails%></p>
@@ -38,7 +38,7 @@
                     <p><%=(blogPostsArr[3].content).slice(0, 150)%>....</p>
                 </div>
             </div></a>
-            <a href="/blogpost?id=5"><div class="w-96 border-2 border-black">
+            <a href="/blogpost?id=5"><div class="w-80 md:w-96 border-2 border-black">
                 <img class="object-cover h-[255px]" src="<%=blogPostsArr[4].image%>.JPG">
                 <div class="m-5">
                     <p class="text-left text-xs m-2"><%= blogPostsArr[4].datenDetails%></p>
@@ -46,7 +46,7 @@
                     <p><%=(blogPostsArr[4].content).slice(0, 150)%>....</p>
                 </div>
             </div></a>
-            <a href="/blogpost?id=6"><div class="w-96 border-2 border-black">
+            <a href="/blogpost?id=6"><div class="w-80 md:w-96 border-2 border-black">
                 <img class="object-cover h-[255px]" src="<%=blogPostsArr[5].image%>.JPG">
                 <div class="m-5">
                     <p class="text-left text-xs m-2"><%= blogPostsArr[5].datenDetails%></p>
