@@ -36,6 +36,10 @@ app.get("/contact", (req, res) => {
     res.render("contact.ejs");
 });
 
+app.get("/blog", (req, res) => {
+    res.render("blog.ejs");
+});
+
 app.listen(port, () => {
 console.log(`Listening on port ${port}`);
 });
