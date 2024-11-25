@@ -13,34 +13,7 @@ body {
 }
 
 
-#homeHero{
-    height: 92vh;
-    min-height: fit-content;
-}
 
-#myVideo{
-    position: absolute;
-    z-index: -1;
-    opacity: 30%;
-    bottom: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.picContainer{
-    height: 100vh;
-}
-
-
-.m-200{
-    margin-right: 200px;
-}
-
-.m-50{
-    margin-top: 50px;
-}
 
 
 #aboutText{
@@ -65,9 +38,6 @@ body {
     height: 40vh;
 }
 
-.plus9xl{
-    font-size: 10rem;
-}
 
 #saketAboutPic{
     width: 70%;
