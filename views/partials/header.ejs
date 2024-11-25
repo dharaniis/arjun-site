@@ -11,32 +11,42 @@
         <link rel="stylesheet" href="/styles/style.css">
     </head>
     <body>
-        <div id="navbar" class="goldman flex flex-nowrap py-3 sticky top-0 z-10">
+        <nav id="navbar" class="bg-black/0.2 goldman flex flex-wrap py-3 sticky top-0 z-10">
             <div class=" justify-start basis-1/2 shrink">
-                <a href="#" class="text-2xl font-bold goldman px-7">Arjun</a>
+                <a href="#" class="text-2xl font-bold goldman px-7 hover:text-red-600">Arjun</a>
             </div>
-            <div class=" basis-1/2 flex justify-end items-center">           
-                <a href="/" class="mx-3">Home</a>
-                <a href="/about" class="mx-3">About</a>
-                <div class="relative inline-block text-left">
-                    <div>
-                      <button onclick="myFunction()" type="button" class="inline-flex w-full justify-center gap-x-1.5 rounded-md px-3 py-2 text-sm shadow-sm hover:bg-red-600" id="menu-button" aria-expanded="true" aria-haspopup="true">
-                        Programs
-                        <svg class="-mr-1 size-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
-                          <path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
-                        </svg>
-                      </button>
-                    </div>
-                    <div id="dropdown" class="hidden text-left bg-red-600/[0.9] absolute left-0 z-10 mt-2 pr-7 w-min origin-top-right rounded-md shadow-lg ring-1 ring-black/5 focus:outline-none"  role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
-                      <div class="py-1" role="none">
-                        <a href="/fatloss" class="block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-0">Fat Loss</a>
-                        <a href="/bulking" class="block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-1">Bulking</a>
-                        <a href="/bodyRecomp" class="block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-2">Body Recomposition</a>
+            <div class="md:hidden flex items-center justify-end basis-1/2">
+              <button onclick="myFunction2()" data-collapse-toggle="navList" type="button" class="mr-10" >
+                <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+              </svg>
+              </button>
+            </div>
+            <div id="navList" class="hidden md:block w-full md:basis-1/2">
+              <ul class="m-2 text-xl flex flex-col gap-2 justify-end items-center  md:m-0 md:flex-row md:text-sm">           
+                  <li><a href="/" class="mx-3 md:hover:text-red-600">Home</a></li>
+                  <li><a href="/about" class="mx-3 md:hover:text-red-600">About</a></li>
+                  <li><div class="md:relative md:inline-block text-left">
+                      <div>
+                        <button onclick="myFunction()" type="button" class="inline-flex w-full justify-center gap-x-1.5 rounded-md px-3 py-2 shadow-sm md:hover:bg-red-600" id="menu-button" aria-expanded="true" aria-haspopup="true">
+                          Programs
+                          <svg class="-mr-1 size-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                            <path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
+                          </svg>
+                        </button>
+                      </div>
+                      <div id="dropdown" class="hidden text-center md:text-left  opacity-1 md:text-white md:bg-red-600/[0.9] md:absolute left-0 z-10 mt-2 pr-7 md:w-min origin-top-right md:rounded-md md:shadow-lg md:ring-1 md:ring-black/5 focus:outline-none">
+                          <ul class="py-1">
+                            <li><a href="/fatloss" class="block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-0">Fat Loss</a></li>
+                            <li><a href="/bulking" class="block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-1">Bulking</a></li>
+                            <li><a href="/bodyRecomp" class="block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-2">Body Recomposition</a></li>
+                          </ul>
                       </div>
                     </div>
-                  </div>
-                <a href="/blog" class="mx-3">Blog</a>
-                <a href="/contact" class="mx-3">Contact</a>
-            </div>
+                  </li>
+                  <li><a href="/blog" class="mx-3 md:hover:text-red-600">Blog</a></li>
+                  <li><a href="/contact" class="mx-3 md:hover:text-red-600">Contact</a></li>
+                </ul>
+              </div>
 
-        </div>
+          </nav>
