@@ -26,11 +26,3 @@ body {
     border-radius: 4px;
     background-color: #4ab74a;
 }
-
-
-#saketAboutPic{
-    width: 70%;
-    height: 70%;
-    object-fit: contain;
-
-}
