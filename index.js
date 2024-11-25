@@ -81,7 +81,7 @@ app.get("/contact", (req, res) => {
 });
 
 app.get("/blog", (req, res) => {
-    res.render("blog.ejs");
+    res.render("blog.ejs", {blogPostsArr: blogPostsArr});
 });
 
 app.get("/blogpost", (req, res) => {

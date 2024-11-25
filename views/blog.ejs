@@ -5,53 +5,53 @@
         <h1 class="text-4xl mt-16">All Posts</h1>
     </div>
     <div id="blogPostsContainer" class="h-fit mb-16 mt-7 flex justify-center">
-        <a href="/blogpost?id=1"><div class="h-fit gap-10 grid grid-cols-1 md:grid-cols-3 ">
-            <div class="w-96 border-2 border-black">
-                <img class="object-cover h-[255px]" src="morning.JPG">
+        <div id="blogPostsGrid"class="h-fit gap-10 grid grid-cols-1 md:grid-cols-3 ">
+            <a href="/blogpost?id=1"><div class="w-96 border-2 border-black">
+                <img class="object-cover h-[255px]" src="<%=blogPostsArr[0].image%>.JPG">
                 <div class="m-5">
-                    <p class="text-left text-xs m-2">Admin • Mar 22, 2024 • 2 min read</p>
-                    <h1 class="text-xl font-bold">Morning Workouts: Kickstart Your Day with Energy and Focus</h1>
-                    <p>Create a blog post subtitle that summarizes your post in a few short, punchy sentences and entices your audience to continue reading....</p>
+                    <p class="text-left text-xs m-2"><%= blogPostsArr[0].datenDetails%></p>
+                    <h1 class="text-xl font-bold"><%= blogPostsArr[0].title%></h1>
+                    <p><%=(blogPostsArr[0].content).slice(0, 150)%>....</p>
                 </div>
             </div></a>
             <a href="/blogpost?id=2"><div class="w-96 border-2 border-black">
-                <img class="object-cover h-[255px]" src="nutrition.JPG">
+                <img class="object-cover h-[255px]" src="<%=blogPostsArr[1].image%>.JPG">
                 <div class="m-5">
-                    <p class="text-left text-xs m-2">Admin • Sep 16, 2023 • 5 min read</p>
-                    <h1 class="text-xl font-bold">Nutrition Made Simple: Fuel Your Fitness Journey</h1>
-                    <p>Create a blog post subtitle that summarizes your post in a few short, punchy sentences and entices your audience to continue reading....</p>
+                    <p class="text-left text-xs m-2"><%= blogPostsArr[1].datenDetails%></p>
+                    <h1 class="text-xl font-bold"><%= blogPostsArr[1].title%></h1>
+                    <p><%=(blogPostsArr[1].content).slice(0, 150)%>....</p>
                 </div>
             </div></a>
             <a href="/blogpost?id=3"><div class="w-96 border-2 border-black">
-                <img class="object-cover h-[255px]" src="desk.JPG">
+                <img class="object-cover h-[255px]" src="<%=blogPostsArr[2].image%>.JPG">
                 <div class="m-5">
-                    <p class="text-left text-xs m-2">Admin • Nov 06, 2023 • 10 min read</p>
-                    <h1 class="text-xl font-bold">Desk Workouts: Stay Active Even at Your Job</h1>
-                    <p>Create a blog post subtitle that summarizes your post in a few short, punchy sentences and entices your audience to continue reading....</p>
+                    <p class="text-left text-xs m-2"><%= blogPostsArr[2].datenDetails%></p>
+                    <h1 class="text-xl font-bold"><%= blogPostsArr[2].title%></h1>
+                    <p><%=(blogPostsArr[2].content).slice(0, 150)%>....</p>
                 </div>
             </div></a>
             <a href="/blogpost?id=4"><div class="w-96 border-2 border-black">
-                <img class="object-cover h-[255px]" src="scale.JPG">
+                <img class="object-cover h-[255px]" src="<%=blogPostsArr[3].image%>.JPG">
                 <div class="m-5">
-                    <p class="text-left text-xs m-2">Admin • Feb 14, 2016 • 5 min read</p>
-                    <h1 class="text-xl font-bold">Breaking Through Plateaus: Tips to Keep Progressing</h1>
-                    <p>Create a blog post subtitle that summarizes your post in a few short, punchy sentences and entices your audience to continue reading....</p>
+                    <p class="text-left text-xs m-2"><%= blogPostsArr[3].datenDetails%></p>
+                    <h1 class="text-xl font-bold"><%= blogPostsArr[3].title%></h1>
+                    <p><%=(blogPostsArr[3].content).slice(0, 150)%>....</p>
                 </div>
             </div></a>
             <a href="/blogpost?id=5"><div class="w-96 border-2 border-black">
-                <img class="object-cover h-[255px]" src="mind.JPG">
+                <img class="object-cover h-[255px]" src="<%=blogPostsArr[4].image%>.JPG">
                 <div class="m-5">
-                    <p class="text-left text-xs m-2">Admin • Jan 21, 2024 • 10 min read</p>
-                    <h1 class="text-xl font-bold">The Mind-Body Connection: Fitness for Mental Health</h1>
-                    <p>Create a blog post subtitle that summarizes your post in a few short, punchy sentences and entices your audience to continue reading....</p>
+                    <p class="text-left text-xs m-2"><%= blogPostsArr[4].datenDetails%></p>
+                    <h1 class="text-xl font-bold"><%= blogPostsArr[4].title%></h1>
+                    <p><%=(blogPostsArr[4].content).slice(0, 150)%>....</p>
                 </div>
             </div></a>
             <a href="/blogpost?id=6"><div class="w-96 border-2 border-black">
-                <img class="object-cover h-[255px]" src="homegym.JPG">
+                <img class="object-cover h-[255px]" src="<%=blogPostsArr[5].image%>.JPG">
                 <div class="m-5">
-                    <p class="text-left text-xs m-2">Admin • Feb 14, 2016 • 2 min read</p>
-                    <h1 class="text-xl font-bold">Home Gym Essentials: Build Your Fitness Space on a Budget</h1>
-                    <p>Create a blog post subtitle that summarizes your post in a few short, punchy sentences and entices your audience to continue reading....</p>
+                    <p class="text-left text-xs m-2"><%= blogPostsArr[5].datenDetails%></p>
+                    <h1 class="text-xl font-bold"><%= blogPostsArr[5].title%></h1>
+                    <p><%=(blogPostsArr[5].content).slice(0, 150)%>....</p>
                 </div>
             </div></a>
         </div>
