@@ -29,11 +29,6 @@ body {
     object-fit: cover;
 }
 
-#quote{
-    height: 22vh;
-    min-height: 150px;
-
-}
 
 #aboutMe {
     height: 100vh;
