@@ -40,6 +40,10 @@ app.get("/blog", (req, res) => {
     res.render("blog.ejs");
 });
 
+app.get("/blogpost", (req, res) => {
+    res.render("blogpost.ejs");
+});
+
 app.listen(port, () => {
 console.log(`Listening on port ${port}`);
 });
