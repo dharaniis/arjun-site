@@ -29,24 +29,10 @@ body {
     object-fit: cover;
 }
 
-
-#aboutMe {
-    height: 100vh;
-    min-height: 500px;
-}
-
 .picContainer{
     height: 100vh;
 }
 
-#saket{
-    width: 100%;
-    height: 100%;
-    bottom: 0;
-    right: 0;
-    object-fit: cover;
-    opacity: 50%;
-}
 
 .m-200{
     margin-right: 200px;
