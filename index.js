@@ -5,8 +5,10 @@ import ejs from "ejs";
 const app = express();
 const port = 3000;
 
-app.use(express.static('public'));
 app.use(bodyParser.urlencoded({extended: true}));
+app.set("views", __dirname + "/views");
+app.set("view engine", "ejs");
+app.use(express.static(__dirname + "public"));
 
 const morning = {
     datenDetails: "Admin • Mar 22, 2024 • 2 min read",
