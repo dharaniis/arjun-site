@@ -12,7 +12,7 @@ const __dirname = dirname(__filename);
 app.use(bodyParser.urlencoded({extended: true}));
 app.set("views", __dirname + "/views");
 app.set("view engine", "ejs");
-app.use(express.static(__dirname+'/public'));
+app.use(express.static(__dirname+'public'));
 
 const morning = {
     datenDetails: "Admin • Mar 22, 2024 • 2 min read",
@@ -59,10 +59,6 @@ const homegym = {
 const blogPostsArr = [morning, nutrition, desk, scale, mind, homegym]
 
 app.get("/", (req, res) => {
-    res.render("home.ejs");
-});
-
-app.get("/home", (req, res) => {
     res.render("home.ejs");
 });
 
