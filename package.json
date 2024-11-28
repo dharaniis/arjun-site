@@ -3,13 +3,14 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-  "start": "node index.js"
+    "start": "node index.js"
   },
   "type": "module",
   "author": "Dharani I S",
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "body-parser": "^1.20.3",
     "ejs": "^3.1.10",
     "express": "^4.21.1"
   }
