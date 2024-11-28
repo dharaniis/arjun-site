@@ -5,6 +5,9 @@
   "scripts": {
     "start": "node index.js"
   },
+  "engines": {
+    "node": ">=14.17.6"
+  },
   "type": "module",
   "author": "Dharani I S",
   "license": "ISC",
