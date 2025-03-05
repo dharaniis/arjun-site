@@ -1,6 +1,6 @@
 import { useState } from "react";
-import Navbar from "./scenes/navbar"
-import Home from "./scenes/home";
+import Navbar from "./components/navbar";
+import Home from "./pages/home/";
 
 function App() {
   const [isHidden, setIsHidden] = useState<boolean>(true);

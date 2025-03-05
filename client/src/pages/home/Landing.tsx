@@ -1,8 +1,8 @@
 
 
-const Home = () => {
+const Landing = () => {
   return (
-    <div id="Home" className="relative flex justify-center items-center h-screen overflow-hidden">
+    <div id="Landing" className="relative flex justify-center items-center h-screen overflow-hidden">
       <div className="flex flex-col gap-5 justify-center items-center text-center">
         <h1 className="text-7xl">"Your Fitness Odyssey Begins Here"</h1>
         <h1 className="text-xl">ARJUN KUMAR - ONLINE FITNESS COACH</h1>
@@ -15,4 +15,4 @@ const Home = () => {
   )
 }
 
-export default Home
+export default Landing
