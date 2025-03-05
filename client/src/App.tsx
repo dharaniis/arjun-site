@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Navbar from "./scenes/navbar"
+import Home from "./scenes/home";
 
 function App() {
   const [isHidden, setIsHidden] = useState<boolean>(true);
@@ -12,6 +13,7 @@ function App() {
         DelayHandler={DelayHandler}
         setDelayHandler={setDelayHandler}
         />
+        <Home/>
     </div>
   )
 }
