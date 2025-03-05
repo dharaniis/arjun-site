@@ -1,3 +1,4 @@
+import AboutMe from "./AboutMe"
 import Landing from "./Landing"
 import Quote from "./Quote"
 
@@ -8,6 +9,7 @@ function Home({}: Props) {
     <div> 
         <Landing/>
         <Quote/>
+        <AboutMe/>
     </div>
   )
 }
