@@ -6,3 +6,18 @@ body{
     color: white;
     font-family: "Goldman", sans-serif;
 }
+
+@theme {
+    --animate-infinite-scroll: infinite-scroll 25s linear infinite;
+    --text-10xl: 10rem;
+
+}
+
+@keyframes infinite-scroll {
+    from {
+        transform: translateX(0);
+      }
+      to {
+        transform: translateX(-100%);
+      }
+}
