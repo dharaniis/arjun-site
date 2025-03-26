@@ -7,6 +7,9 @@ body{
     font-family: "Goldman", sans-serif;
 }
 
+.goldman {
+  font-family: "Goldman", sans-serif;  
+}
 @theme {
     --animate-infinite-scroll: infinite-scroll 25s linear infinite;
     --text-10xl: 10rem;

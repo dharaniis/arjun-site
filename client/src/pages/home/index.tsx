@@ -1,5 +1,6 @@
 import AboutMe from "./AboutMe"
 import Landing from "./Landing"
+import Plans from "./Plans"
 import Programs from "./Programs"
 import Quote from "./Quote"
 
@@ -12,6 +13,7 @@ function Home({}: Props) {
         <Quote/>
         <AboutMe/>
         <Programs/>
+        <Plans/> 
     </div>
   )
 }
