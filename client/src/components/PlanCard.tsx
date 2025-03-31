@@ -14,7 +14,7 @@ function PlanCard( { name, description, price, features }: PlanType) {
                   <span className="text-5xl font-extrabold">{price}</span>
                   <span className="goldman text-red-600">/month</span>
               </div>
-              <ul className="h-72 flex flex-col gap-2 text-white text-left">
+              <ul className="h-72 flex flex-col justify-evenly gap-2 text-white text-left">
                 {features.map((feature: string) => (
                   <PlanFeature
                     content = {feature}

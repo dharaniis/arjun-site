@@ -3,6 +3,7 @@ import Landing from "./Landing"
 import Plans from "./Plans"
 import Programs from "./Programs"
 import Quote from "./Quote"
+import Testimonials from "./Testimonials"
 
 type Props = {}
 
@@ -14,6 +15,7 @@ function Home({}: Props) {
         <AboutMe/>
         <Programs/>
         <Plans/> 
+        <Testimonials/>
     </div>
   )
 }

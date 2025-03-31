@@ -4,3 +4,10 @@ export interface PlanType {
     price: string,
     features: Array<string>,
 }
+
+export interface TestimonialType {
+    quote: string,
+    longquote: string,
+    name: string,
+    profession: string,
+}
