@@ -1,4 +1,5 @@
 import AboutMe from "./AboutMe"
+import ContactUs from "./ContactUs"
 import Landing from "./Landing"
 import Plans from "./Plans"
 import Programs from "./Programs"
@@ -16,6 +17,7 @@ function Home({}: Props) {
         <Programs/>
         <Plans/> 
         <Testimonials/>
+        <ContactUs />
     </div>
   )
 }

@@ -1,6 +1,7 @@
 {
   "dependencies": {
-    "path": "^0.12.7"
+    "path": "^0.12.7",
+    "react-hook-form": "^7.55.0"
   },
   "devDependencies": {
     "@types/node": "^22.13.13"
