@@ -18,7 +18,7 @@ function Navbar({isHidden, setIsHidden, DelayHandler, setDelayHandler}: Props) {
             </div>
             <div className="basis-1/2 text-md flex justify-end gap-7 px-7">
               <Link to="/" >Home</Link>
-              <Link to="/" >About</Link>
+              <Link to="/about" >About</Link>
               <Link to="/" 
                 className="relative flex gap-2 items-center"
                 onMouseEnter={ ()=>setIsHidden(false) } 
