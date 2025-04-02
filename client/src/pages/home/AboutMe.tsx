@@ -2,7 +2,7 @@ type Props = {}
 
 function AboutMe({}: Props) {
   return (
-    <div className="flex h-screen">
+    <div id="AboutMe" className="flex h-screen">
         <div className="basis-1/2 relative">
             <img className="absolute top-0 left-0 object-cover h-full w-full opacity-50" src="/src/assets/saket.jpg"></img>
         </div>

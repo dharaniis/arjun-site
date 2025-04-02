@@ -4,7 +4,7 @@ type Props = {}
 
 function Programs({}: Props) {
   return (
-    <div className="h-fit text-center">
+    <div id="Programs" className="h-fit text-center">
         <div className="text-6xl w-full inline-flex flex-nowrap border-y-4 border-red-700 overflow-hidden" id="infiniteProgram">
             <ul className="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll">
                 <li className="my-4">Programs</li>

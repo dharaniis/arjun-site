@@ -19,7 +19,7 @@ function ContactUs({}: Props) {
         }};
     
     return (
-        <div className="flex justify-center items-center h-fit my-36"> 
+        <div id="ContactUs" className="flex justify-center items-center h-fit my-36"> 
             <div className="grid grid-cols-2 gap-10 font-sans w-[60rem]">
                 <div className="flex flex-col gap-[50px]">
                     <div>

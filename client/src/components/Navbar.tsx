@@ -1,5 +1,5 @@
-import AnchorLink from "react-anchor-link-smooth-scroll"
 import { ChevronDownIcon } from '@heroicons/react/24/solid'
+import { Link } from 'react-router-dom';
 
 type Props = {
   isHidden:  boolean;
@@ -11,15 +11,15 @@ type Props = {
 function Navbar({isHidden, setIsHidden, DelayHandler, setDelayHandler}: Props) {
   
   return (
-    <nav className="">
+    <nav id="Navbar" className="">
         <div className="bg-[rgba(0,0,0,0.2)] w-full fixed z-30 flex items-center py-3">
             <div className="basis-1/2 px-7">
-              <AnchorLink href="" className="goldman font-bold text-3xl">Arjun</AnchorLink>
+              <a href="/" className="goldman font-bold text-3xl">Arjun</a>
             </div>
             <div className="basis-1/2 text-md flex justify-end gap-7 px-7">
-              <AnchorLink href="">Home</AnchorLink>
-              <AnchorLink href="">About</AnchorLink>
-              <AnchorLink href="" 
+              <Link to="/" >Home</Link>
+              <Link to="/" >About</Link>
+              <Link to="/" 
                 className="relative flex gap-2 items-center"
                 onMouseEnter={ ()=>setIsHidden(false) } 
                 onMouseLeave={ ()=> {
@@ -38,15 +38,15 @@ function Navbar({isHidden, setIsHidden, DelayHandler, setDelayHandler}: Props) {
                         }} 
                         onMouseLeave={ ()=>setIsHidden(true) }
                         >
-                          <AnchorLink href="">Fat Loss</AnchorLink>
-                          <AnchorLink href="">Bulking</AnchorLink>
-                          <AnchorLink href="">Body Recomposition</AnchorLink>
+                          <Link to="/">Fat Loss</Link>
+                          <Link to="/">Bulking</Link>
+                          <Link to="/">Body Recomposition</Link>
                       </div>
                     </div>
                   )}
-                </AnchorLink>
-              <AnchorLink href="">Blog</AnchorLink>
-              <AnchorLink href="">Contact</AnchorLink>
+                </Link>
+              <Link to="/">Blog</Link>
+              <Link to="/">Contact</Link>
             </div>
 
         </div>
