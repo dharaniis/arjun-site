@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Home from "./pages/home/";
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 function App() {
   const [isHidden, setIsHidden] = useState<boolean>(true);
@@ -14,6 +15,7 @@ function App() {
         setDelayHandler={setDelayHandler}
         />
         <Home/>
+        <Footer/>
     </div>
   )
 }
