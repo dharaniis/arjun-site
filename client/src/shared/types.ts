@@ -18,3 +18,12 @@ export interface TestimonialType {
     name: string,
     profession: string,
 }
+
+export interface ProgramType {
+    tagline: string,
+    ytLink: string
+}
+
+export interface ProgramDictType {
+    [dict_key: string]: ProgramType;
+}

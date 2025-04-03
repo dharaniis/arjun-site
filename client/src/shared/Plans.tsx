@@ -1,5 +1,5 @@
-import PlanCard from "../../components/PlanCard"
-import { PlanType } from '../../shared/types'
+import { PlanType } from './types'
+import PlanCard from '../components/PlanCard';
 type Props = {}
 
 const PlansContent: Array<PlanType> = [
@@ -25,7 +25,7 @@ const PlansContent: Array<PlanType> = [
 
 function Plans({}: Props) {
   return (
-    <div id="Plans" className="flex flex-col items-center text-center" >
+    <div id="Plans" className="my-16 flex flex-col items-center text-center" >
       <div className="my-24 max-w-screen-md">
           <h1 className="text-6xl text-red-600">Choose a plan thats right for you</h1>
           <p className="text-gray-400 text-xl font-sans font-light">These carefully designed pricing plans offer the perfect blend of flexibility, support, and personalization to cater to a wide range of fitness goals.</p>

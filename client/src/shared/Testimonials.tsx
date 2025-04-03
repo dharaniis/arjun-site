@@ -1,5 +1,5 @@
 import Testimonial from '@/components/Testimonial.tsx'
-import { TestimonialType } from '../../shared/types'
+import { TestimonialType } from './types'
 
 
 type Props = {}
@@ -33,7 +33,7 @@ const TestimonialContent: Array<TestimonialType> = [
 
 function Testimonials({}: Props) {
   return (
-    <div id="Testimonials" className="h-fit mx-10">
+    <div id="Testimonials" className="h-fit">
         <h1 className="my-24 text-7xl text-red-600 text-center">Success Stories</h1>
         <div className="grid grid-cols-2 gap-[100px] font-sans mx-16">
             {TestimonialContent.map((content:TestimonialType) => (

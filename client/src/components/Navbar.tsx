@@ -19,7 +19,7 @@ function Navbar({isHidden, setIsHidden, DelayHandler, setDelayHandler}: Props) {
             <div className="basis-1/2 text-md flex justify-end gap-7 px-7">
               <Link to="/" >Home</Link>
               <Link to="/about" >About</Link>
-              <Link to="/" 
+              <p
                 className="relative flex gap-2 items-center"
                 onMouseEnter={ ()=>setIsHidden(false) } 
                 onMouseLeave={ ()=> {
@@ -38,13 +38,13 @@ function Navbar({isHidden, setIsHidden, DelayHandler, setDelayHandler}: Props) {
                         }} 
                         onMouseLeave={ ()=>setIsHidden(true) }
                         >
-                          <Link to="/">Fat Loss</Link>
-                          <Link to="/">Bulking</Link>
-                          <Link to="/">Body Recomposition</Link>
+                          <Link to="/program/fatloss">Fat Loss</Link>
+                          <Link to="/program/bulking">Bulking</Link>
+                          <Link to="/program/bodyRecomposition">Body Recomposition</Link>
                       </div>
                     </div>
                   )}
-                </Link>
+                </p>
               <Link to="/">Blog</Link>
               <Link to="/">Contact</Link>
             </div>

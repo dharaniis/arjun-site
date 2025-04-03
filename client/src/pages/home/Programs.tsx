@@ -21,17 +21,20 @@ function Programs({}: Props) {
         </div>
         <h1 className="m-10 text-5xl text-red-700">Explore our goal based programs</h1>
         <div className="flex justify-center gap-10">
-          <ProgramCard 
+          <ProgramCard
+            id="fatloss" 
             program="Fat Loss Program"
             info="Diet • BEGINNER • 30 Mins"
             image="fat2fit"
           />
-          <ProgramCard 
+          <ProgramCard
+            id="bulking" 
             program="Bulking Program"
             info="Diet • BEGINNER • 45 Mins"
             image="bulking"
           />
-          <ProgramCard 
+          <ProgramCard
+            id="bodyRecomposition" 
             program="Body Recomposition Program"
             info="Diet • BEGINNER • 50 Mins"
             image="recomp"
