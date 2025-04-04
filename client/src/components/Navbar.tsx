@@ -46,7 +46,7 @@ function Navbar({isHidden, setIsHidden, DelayHandler, setDelayHandler}: Props) {
                   )}
                 </p>
               <Link to="/">Blog</Link>
-              <Link to="/">Contact</Link>
+              <Link to="/contact">Contact</Link>
             </div>
 
         </div>
