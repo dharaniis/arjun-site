@@ -1,4 +1,3 @@
-import { useState } from "react";
 import Navbar from "../../components/Navbar"
 import Footer from "../../components/Footer";
 import Plans from "../../shared/Plans";
@@ -24,19 +23,11 @@ function Program({}: Props) {
         ytLink: "https://www.youtube.com/embed/f4szJ_e4zsQ?si=8tGfJpIgdYSXNIyk"
       }
     };
-
-    const [isHidden, setIsHidden] = useState<boolean>(true);
-    const [DelayHandler, setDelayHandler] = useState<any>(null);
     
     const ytLink = `${programs[programName].ytLink}`
     return (
       <div>
-          <Navbar 
-            isHidden={isHidden}
-            setIsHidden={setIsHidden}
-            DelayHandler={DelayHandler}
-            setDelayHandler={setDelayHandler}
-          /> 
+          <Navbar /> 
           <div className="pt-32 flex flex-col gap-5 items-center text-center">
             <div>
                 <h1 className="leading-[2.5rem] text-[55px]">{programs[programName].tagline}<br/>in just</h1>

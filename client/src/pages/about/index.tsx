@@ -1,20 +1,12 @@
-import { useState } from "react";
 import Footer from "../../components/Footer";
 import Navbar from "../../components/Navbar"
 
 type Props = {}
 
 function About({}: Props) {
-    const [isHidden, setIsHidden] = useState<boolean>(true);
-    const [DelayHandler, setDelayHandler] = useState<any>(null);
     return (
         <div>
-            <Navbar
-                isHidden={isHidden}
-                setIsHidden={setIsHidden}
-                DelayHandler={DelayHandler}
-                setDelayHandler={setDelayHandler}
-            />
+            <Navbar />
             <div className="px-24 py-36">
                 <div>
                     <h1 className="text-7xl">ARJUN KUMAR</h1>

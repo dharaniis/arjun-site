@@ -1,4 +1,3 @@
-import { useState } from "react";
 import Footer from "../../components/Footer";
 import Navbar from "../../components/Navbar";
 import ContactForm from "../../components/ContactForm";
@@ -6,17 +5,10 @@ import ContactForm from "../../components/ContactForm";
 type Props = {}
 
 function Contact({}: Props) {
-    const [isHidden, setIsHidden] = useState<boolean>(true);
-    const [DelayHandler, setDelayHandler] = useState<any>(null);
     
     return (
         <div>
-            <Navbar 
-                isHidden={isHidden}
-                setIsHidden={setIsHidden}
-                DelayHandler={DelayHandler}
-                setDelayHandler={setDelayHandler}
-        /> 
+        <Navbar /> 
         <div className="py-32 space-y-10">
             <div className="mx-auto space-y-2 text-center">
                 <h1 className="text-7xl text-red-600 ">Have a question?<br/>Shoot us an email</h1>
