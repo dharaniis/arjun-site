@@ -1,4 +1,3 @@
-import { useState } from "react"
 import AboutMe from "./AboutMe"
 import ContactUs from "./ContactUs"
 import Landing from "./Landing"
@@ -12,17 +11,11 @@ import Testimonials from "../../shared/Testimonials"
 type Props = {}
 
 function Home({}: Props) {
-  const [isHidden, setIsHidden] = useState<boolean>(true);
-  const [DelayHandler, setDelayHandler] = useState<any>(null);
+
 
   return (
     <div>
-        <Navbar 
-          isHidden={isHidden}
-          setIsHidden={setIsHidden}
-          DelayHandler={DelayHandler}
-          setDelayHandler={setDelayHandler}
-        /> 
+        <Navbar /> 
         <Landing/>
         <Quote/>
         <AboutMe/>
