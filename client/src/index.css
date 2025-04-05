@@ -13,6 +13,7 @@ body{
 @theme {
     --animate-infinite-scroll: infinite-scroll 25s linear infinite;
     --text-10xl: 10rem;
+    --breakpoint-md: 1060px;
 
 }
 
