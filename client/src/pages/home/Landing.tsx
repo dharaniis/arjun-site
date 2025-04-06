@@ -9,7 +9,7 @@ const Landing = () => {
         <AnchorLink href="#Programs" className="w-fit md:text-sm text-xs px-5 py-2 md:px-7 md:py-2.5 text-red-600 hover:text-white border border-red-600 hover:bg-red-600 focus:ring-2 focus:ring-red-300" >Get Started</AnchorLink>
       </div>
       <video className="absolute object-cover h-full w-full top-0 left-0 opacity-30 z-[-1]" playsInline={true} autoPlay={true} muted loop={true} id="myVideo">
-        <source src="/src/assets/gym.mp4" type="video/mp4" />
+        <source src="gym.mp4" type="video/mp4" />
       </video>
     </div>
   )

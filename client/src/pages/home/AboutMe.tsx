@@ -4,7 +4,7 @@ function AboutMe({}: Props) {
   return (
     <div id="AboutMe" className="grid grid-cols-1 md:grid-cols-2 h-fit">
         <div className="relative h-screen">
-            <img className="absolute top-0 left-0 object-cover h-full w-full opacity-50" src="/src/assets/saket.jpg"></img>
+            <img className="absolute top-0 left-0 object-cover h-full w-full opacity-50" src="saket.jpg"></img>
         </div>
         <div className="m-7 md:mx-10 flex flex-col justify-center items-center text-center md:text-left md:items-start">
             <div className="">

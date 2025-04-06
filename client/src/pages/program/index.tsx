@@ -8,7 +8,7 @@ import { useParams } from "react-router-dom";
 type Props = {}
 
 function Program({}: Props) {
-    const  programName:any  = useParams();
+    const  { programName }  = useParams() as { programName: string };;
     const programs: ProgramDictType = {
       "fatloss": {
         tagline: "Loose your belly fat & gain confidence",
