@@ -26,11 +26,11 @@ const PlansContent: Array<PlanType> = [
 function Plans({}: Props) {
   return (
     <div id="Plans" className="my-16 flex flex-col items-center text-center" >
-      <div className="my-24 max-w-screen-md">
-          <h1 className="text-6xl text-red-600">Choose a plan thats right for you</h1>
-          <p className="text-gray-400 text-xl font-sans font-light">These carefully designed pricing plans offer the perfect blend of flexibility, support, and personalization to cater to a wide range of fitness goals.</p>
+        <div className="mx-10 my-24 max-w-screen-md">
+          <h1 className="text-5xl leading-none md:text-6xl text-red-600">Choose a plan thats right for you</h1>
+          <p className="text-gray-400 text-sm md:text-xl font-sans font-light">These carefully designed pricing plans offer the perfect blend of flexibility, support, and personalization to cater to a wide range of fitness goals.</p>
         </div>
-        <div className="w-full flex flex-row gap-10 justify-center">
+        <div className="w-fit grid grid-cols-1 md:grid-cols-3 gap-10 justify-items-center">
             {PlansContent.map((plan: PlanType) => (
               <PlanCard
                 key = {plan.name}
