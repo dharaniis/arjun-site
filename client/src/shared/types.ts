@@ -19,6 +19,13 @@ export interface TestimonialType {
     profession: string,
 }
 
+export interface ProgramsContentType {
+    id: string,
+    program: string,
+    info: string,
+    image: string,
+}
+
 export interface ProgramType {
     tagline: string,
     ytLink: string
