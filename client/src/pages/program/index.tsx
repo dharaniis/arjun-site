@@ -8,7 +8,7 @@ import { useParams } from "react-router-dom";
 type Props = {}
 
 function Program({}: Props) {
-    const { programName } = useParams();
+    const  programName:any  = useParams();
     const programs: ProgramDictType = {
       "fatloss": {
         tagline: "Loose your belly fat & gain confidence",
@@ -36,7 +36,7 @@ function Program({}: Props) {
             </div>
             <button type="button" className="md:w-[50rem] w-fit text-sm md:text-xl border-2 px-3 py-2 md:px-5 md:py-2 mt-0 m-5 border-red-600 goldman hover:bg-red-600 hover:text-white">CLICK HERE TO JOIN</button>
             <div id="iframe" className="flex items-center justify-center">
-                <iframe className="m-5 w-[448px] h-[252px] md:w-[672px] md:h-[378px]" width="672" height="378" src={ytLink} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe className="m-5 w-[448px] h-[252px] md:w-[672px] md:h-[378px]" width="672" height="378" src={ytLink} title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
             </div>
           </div>
           <Testimonials />
