@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Goldman&display=swap');
+@import "tailwindcss";
+
+body{
+    background-color: black;
+    color: white;
+    font-family: "Goldman", sans-serif;
+}
+
+.goldman {
+  font-family: "Goldman", sans-serif;  
+}
+@theme {
+    --animate-infinite-scroll: infinite-scroll 25s linear infinite;
+    --text-10xl: 10rem;
+    --breakpoint-md: 1060px;
+
+}
+
+@keyframes infinite-scroll {
+    from {
+        transform: translateX(0);
+      }
+      to {
+        transform: translateX(-100%);
+      }
+}
