@@ -23,7 +23,7 @@ function About({}: Props) {
                         <p>After launching several successful transformation stories on the planet, I started a Youtube channel with the sole purpose to help more people become fit. We are now trusted by 110k+ people as subscribers. I am excited to work with you in FitX-120.</p>
                     </div>
                     <div className="order-first md:order-none flex justify-center items-center">
-                        <img className="w-[30rem] object-cover" src="/src/assets/saketabout.jpg"></img>
+                        <img className="w-[30rem] object-cover" src="saketabout.jpg"></img>
                     </div>
                 </div>
             </div>

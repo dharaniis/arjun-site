@@ -5,7 +5,7 @@ type Props = {
 }
 
 function ContactIcons( { Icon } : Props) {
-  const url = `/src/assets/${Icon}.svg`
+  const url = `${Icon}.svg`
   return (
     <div className="bg-white rounded-full p-[15px]">
         <img src={url} className="size-5"/>
