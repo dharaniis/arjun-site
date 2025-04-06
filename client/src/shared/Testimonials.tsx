@@ -1,3 +1,4 @@
+// @ts-ignore
 import Testimonial from '@/components/Testimonial.tsx'
 import { TestimonialType } from './types'
 

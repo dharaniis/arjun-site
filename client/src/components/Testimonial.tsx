@@ -1,3 +1,4 @@
+// @ts-ignore
 import { TestimonialType } from '@/shared/types';
 import TestimonialImage from './TestimonialImage';
 

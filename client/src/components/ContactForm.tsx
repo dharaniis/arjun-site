@@ -68,7 +68,7 @@ function ContactForm({}: Props) {
                 {errors.subject.type === "maxLength" && "Max length is 100 char."}
                 </p>
             )}
-            <textarea rows="6" 
+            <textarea rows={6}
                 className="rounded-md bg-gray-100 py-3 px-4 w-full text-gray-800" 
                 placeholder="Message"
                 {...register("message", {

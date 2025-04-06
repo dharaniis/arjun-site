@@ -1,6 +1,5 @@
 import { useState } from "react"
 import { Bars3Icon, ChevronDownIcon } from '@heroicons/react/24/solid'
-import { a  } from 'react-router-dom';
 import useMediaQuery from '../hooks/useMediaQuery';
 
 type Props = {
