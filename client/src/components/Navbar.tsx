@@ -1,6 +1,6 @@
 import { useState } from "react"
 import { Bars3Icon, ChevronDownIcon } from '@heroicons/react/24/solid'
-import { Link } from 'react-router-dom';
+import { a  } from 'react-router-dom';
 import useMediaQuery from '../hooks/useMediaQuery';
 
 type Props = {
@@ -20,8 +20,8 @@ function Navbar({}: Props) {
             </div>
             {isAboveMediumScreens? (
             <div className="basis-1/2 text-md flex justify-end gap-7 px-7">
-              <Link to="/" >Home</Link>
-              <Link to="/about" >About</Link>
+              <a href="/" >Home</a >
+              <a href="/about" >About</a >
               <p
                 className="relative flex gap-2 items-center"
                 onMouseEnter={ ()=>setIsProgramsToggled(true) } 
@@ -41,15 +41,15 @@ function Navbar({}: Props) {
                         }} 
                         onMouseLeave={ ()=>setIsProgramsToggled(false) }
                         >
-                          <Link to="/program/fatloss">Fat Loss</Link>
-                          <Link to="/program/bulking">Bulking</Link>
-                          <Link to="/program/bodyRecomposition">Body Recomposition</Link>
+                          <a href="/program/fatloss">Fat Loss</a >
+                          <a href="/program/bulking">Bulking</a >
+                          <a href="/program/bodyRecomposition">Body Recomposition</a >
                       </div>
                     </div>
                   )}
                 </p>
-              <Link to="/">Blog</Link>
-              <Link to="/contact">Contact</Link>
+              <a href="/">Blog</a >
+              <a href="/contact">Contact</a >
             </div>
             ): (
               <div className="basis-1/2 flex justify-end">
@@ -63,8 +63,8 @@ function Navbar({}: Props) {
             {!isAboveMediumScreens && IsMenuToggled && (
               <div className="absolute top-0  mt-16 bg-red-600 w-full">
                 <div className="py-5 flex flex-col items-center gap-5 text-xl">
-                  <Link to="/" >Home</Link>
-                  <Link to="/about" >About</Link>
+                  <a href="/" >Home</a >
+                  <a href="/about" >About</a >
                   <span>
                     <button 
                       className="flex gap-2 items-center"
@@ -75,13 +75,13 @@ function Navbar({}: Props) {
                     </span>
                   {IsProgramsToggled && (
                     <div className="flex flex-col shadow-lg p-2 gap-2 text-lg items-center">
-                      <Link to="/program/fatloss">Fat Loss</Link>
-                      <Link to="/program/bulking">Bulking</Link>
-                      <Link to="/program/bodyRecomposition">Body Recomposition</Link>
+                      <a href="/program/fatloss">Fat Loss</a >
+                      <a href="/program/bulking">Bulking</a >
+                      <a href="/program/bodyRecomposition">Body Recomposition</a >
                     </div>
                   )}
-                  <Link to="/">Blog</Link>
-                  <Link to="/contact">Contact</Link>
+                  <a href="/">Blog</a >
+                  <a href="/contact">Contact</a >
                 </div>
               </div>
             )}

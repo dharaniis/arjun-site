@@ -1,6 +1,5 @@
 import { ContactIconType } from "../../shared/types"
 import ContactIcons from "../../components/ContactIcons"
-import { useForm } from "react-hook-form"
 import ContactForm from "../../components/ContactForm";
 
 type Props = {}
