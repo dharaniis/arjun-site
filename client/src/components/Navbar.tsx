@@ -47,7 +47,7 @@ function Navbar({}: Props) {
                     </div>
                   )}
                 </p>
-              <a href="/">Blog</a >
+              <a href="/blog">Blog</a >
               <a href="/contact">Contact</a >
             </div>
             ): (
@@ -79,7 +79,7 @@ function Navbar({}: Props) {
                       <a href="/program/bodyRecomposition">Body Recomposition</a >
                     </div>
                   )}
-                  <a href="/">Blog</a >
+                  <a href="/blog">Blog</a >
                   <a href="/contact">Contact</a >
                 </div>
               </div>

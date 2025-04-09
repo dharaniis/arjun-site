@@ -34,3 +34,10 @@ export interface ProgramType {
 export interface ProgramDictType {
     [dict_key: string]: ProgramType;
 }
+
+export interface BlogPostType {
+    date: string,
+    duration: number,
+    title: string,
+    content: string,
+}
