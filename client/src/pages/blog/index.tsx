@@ -10,7 +10,7 @@ function Blog({}: Props) {
   const [blogPosts, setBlogPosts] = useState<Array<BlogPostType>>();
 
   useEffect(() => {
-    fetch("http://localhost:3000/").then(
+    fetch("http://localhost:4000/").then(
       response => response.json()
     ).then(
       data => {
