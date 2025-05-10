@@ -8,9 +8,8 @@ type Props = {}
 
 function Blog({}: Props) {
   const [blogPosts, setBlogPosts] = useState<Array<BlogPostType>>();
-
   useEffect(() => {
-    fetch("http://localhost:3000/").then(
+    fetch(import.meta.env.VITE_SERVER_URL).then(
       response => response.json()
     ).then(
       data => {
