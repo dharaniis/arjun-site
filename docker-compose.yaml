@@ -1,0 +1,44 @@
+
+services:
+  postgres_db:
+    image: postgres:15
+    hostname: postgres_db
+    container_name: postgres_db
+    restart: always
+    env_file:
+      - ./.pg.env
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    ports:
+      - '5434:5432'
+    networks:
+      - prisma-network
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d postgres"]
+      interval: 5s
+      timeout: 2s
+      retries: 20
+
+  server:
+    container_name: arjunserver
+    build: 
+      context: ./server/  
+      dockerfile: ./Dockerfile
+    ports:
+      - '4000:4000'
+    stdin_open: true
+    tty: true  
+    depends_on:
+      postgres_db:
+        condition: service_healthy
+    env_file:
+      - ./server/.server.env
+    networks:
+      - prisma-network   
+
+volumes:
+  pgdata:
+
+networks:
+  prisma-network:
+    name: prisma-network
