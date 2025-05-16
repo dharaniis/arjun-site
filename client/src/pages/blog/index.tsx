@@ -14,6 +14,7 @@ function Blog({}: Props) {
     ).then(
       data => {
         setBlogPosts(data)
+        localStorage.setItem('blogPosts', JSON.stringify(data));
       }
     )
   }, [])
@@ -33,7 +34,8 @@ function Blog({}: Props) {
               </div>
             ): blogPosts.map((post) => (
                 <BlogPostCard
-                  key={post.title} 
+                  key={post.id}
+                  id={post.id} 
                   date = {post.date}
                   duration = {post.duration}
                   title = {post.title}

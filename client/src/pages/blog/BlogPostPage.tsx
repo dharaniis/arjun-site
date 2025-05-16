@@ -1,9 +1,35 @@
+import { useParams } from "react-router-dom";
+import { BlogPostType } from '../../shared/types'
+import { useEffect, useState } from 'react'
+import Navbar from "../../components/Navbar";
+import Footer from "../../components/Footer";
+
 type Props = {}
 
-function BlogPost({}: Props) {
+function BlogPostPage({}: Props) {
+  const [blogPosts, setBlogPosts] = useState<Array<BlogPostType>>([]);
+
+  useEffect(() => {
+    const data:BlogPostType[] = JSON.parse(localStorage.getItem('blogPosts') as any);
+    if (data) {
+     setBlogPosts(data);
+    }
+  }, []);
+  const  { id }  = useParams() as { id: string };
+  const postObj:BlogPostType = blogPosts.find(x => x.id === Number(id)) as BlogPostType;
+
   return (
-    <div>BlogPost</div>
+    <div className="bg-white">
+      <Navbar/>
+      <div className="py-24 flex justify-center items-center text-black font-sans text-center">
+        <div className="w-[60%] space-y-10 px-20 py-12 h-fit border border-black ">
+          <p className="text-left w-full text-sm">{`Admin • ${postObj?.date} • ${postObj?.duration} min read`}</p>
+          <h1 className="text-5xl font-bold">{postObj?.title}</h1>
+          <p className="text-sm md:text-[17px]/8">{postObj?.content}</p>
+        </div>
+      </div>
+      <Footer/>
+    </div>
   )
 }
-
-export default BlogPost
+export default BlogPostPage
