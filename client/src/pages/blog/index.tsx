@@ -64,7 +64,6 @@ function Blog({}: Props) {
               </button>
               <form 
                   className="mx-5 mt-5 gap-5 flex flex-col font-sans"
-                  target="_blank"
                   onSubmit={onSubmit}
                   action={`${import.meta.env.VITE_SERVER_URL}newPost`}
                   method="POST">
@@ -87,14 +86,14 @@ function Blog({}: Props) {
                   className="text-lg focus:outline-none resize-none" cols={50} rows={12} placeholder="Content"
                   {...register("content", {
                     required: true,
-                    maxLength: 3500,
+                    maxLength: 5000,
                     minLength: 1000,
                 })}
                 />
                 {errors.content && (
                 <p className="text-red-600 text-sm">
                 {errors.content.type === "required" && "This field is required."}
-                {errors.content.type === "maxLength" && "Max length is 3500 char."}
+                {errors.content.type === "maxLength" && "Max length is 5000 char."}
                 {errors.content.type === "minLength" && "Min length is 1000 char."}
                 </p>
                 )}
