@@ -1,3 +1,4 @@
+import { useForm } from "react-hook-form"
 import Navbar from '../../components/Navbar'
 import Footer from '../../components/Footer'
 import BlogPostCard from './BlogPostCard'
@@ -11,10 +12,20 @@ type Props = {}
 function Blog({}: Props) {
   const [blogPosts, setBlogPosts] = useState<Array<BlogPostType>>();
   const [newPost, setNewPost] = useState<boolean>(false);
+  const {
+    register,
+    trigger,
+    formState: { errors }, 
+    } = useForm();
   function newPostHandler(event:any) {
     event.preventDefault();
     setNewPost(false);
   }
+  const onSubmit = async (e: any) => {
+    const isValid = await trigger();
+    if (!isValid) {
+        e.preventDefault();
+    }};
   useEffect(() => {
     fetch(import.meta.env.VITE_SERVER_URL).then(
       response => response.json()
@@ -51,9 +62,42 @@ function Blog({}: Props) {
                   }}>
                   <XMarkIcon className="h-8 w-8"/>
               </button>
-              <form className="mx-5 mt-5 gap-5 flex flex-col font-sans">
-                <input className="text-4xl font-semibold focus:outline-none" placeholder="Title"/>
-                <textarea className="text-lg focus:outline-none resize-none" cols={50} rows={12} placeholder="Content"/>
+              <form 
+                  className="mx-5 mt-5 gap-5 flex flex-col font-sans"
+                  target="_blank"
+                  onSubmit={onSubmit}
+                  action={`${import.meta.env.VITE_SERVER_URL}newPost`}
+                  method="POST">
+                <input 
+                  className="text-4xl font-semibold focus:outline-none" 
+                  placeholder="Title"
+                  type="text"
+                  {...register("title", {                  
+                  required: true,
+                  maxLength: 60,
+              })}
+              />
+              {errors.title && (
+                <p className="text-red-600 text-sm">
+                {errors.title.type === "required" && "This field is required."}
+                {errors.title.type === "maxLength" && "Max length is 60 char."}
+                </p>
+            )}
+                <textarea 
+                  className="text-lg focus:outline-none resize-none" cols={50} rows={12} placeholder="Content"
+                  {...register("content", {
+                    required: true,
+                    maxLength: 3500,
+                    minLength: 1000,
+                })}
+                />
+                {errors.content && (
+                <p className="text-red-600 text-sm">
+                {errors.content.type === "required" && "This field is required."}
+                {errors.content.type === "maxLength" && "Max length is 3500 char."}
+                {errors.content.type === "minLength" && "Min length is 1000 char."}
+                </p>
+                )}
                 <div className="flex flex-col gap-2 items-end text-lg border-t-1 border-stone-300 py-5 px-1">
                   <button  className="px-3 py-1 shadow-4xl rounded-4xl bg-red-700 hover:bg-red-800 w-fit text-white font-sans font-semibold" type="submit">Post</button>
                 </div>
