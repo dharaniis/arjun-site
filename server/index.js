@@ -47,9 +47,15 @@ app.post("/newPost", async (req, res) => {
       date: date,
     },
   })
-  console.log(createPost);
   res.redirect(`${clientDomain}/blog`)
 })  
+
+app.post("/delPost", async (req, res) => {
+  const clientDomain = req.headers.origin;
+  console.log(req.body);
+  res.setHeader("Access-Control-Allow-Origin", "*");
+  res.redirect(`${clientDomain}/blog`)
+})
 
 app.listen(port, () => {
   console.log(`Server is running on http://localhost:${port}`);
