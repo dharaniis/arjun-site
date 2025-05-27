@@ -51,10 +51,11 @@ app.post("/newPost", async (req, res) => {
 })  
 
 app.post("/delPost", async (req, res) => {
-  const clientDomain = req.headers.origin;
-  console.log(req.body);
-  res.setHeader("Access-Control-Allow-Origin", "*");
-  res.redirect(`${clientDomain}/blog`)
+  const deletePost = await prisma.blogposts.delete({
+    where: {
+      id: parseInt(req.body.id),
+    },
+  })
 })
 
 app.listen(port, () => {

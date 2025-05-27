@@ -1,4 +1,4 @@
-import { Link, useNavigate, useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { BlogPostType } from '../../shared/types'
 import { useEffect, useState } from 'react'
 import Navbar from "../../components/Navbar";
@@ -15,10 +15,7 @@ function BlogPostPage({}: Props) {
       method: "POST",
       mode: "cors",
       headers: {'Content-Type': 'application/json'},
-      body: JSON.stringify({id: id}),
-      redirect: "follow",
-    }).then(() => {
-        window.location.href ="/blog";
+      body: JSON.stringify({id: id})
     })
   };
   useEffect(() => {
@@ -34,7 +31,7 @@ function BlogPostPage({}: Props) {
       <Navbar/>
       <div className="py-24 flex justify-center items-center text-black font-sans text-center">
         <div className="relative w-[60%] space-y-10 px-20 py-12 h-fit border border-black ">
-          <button onClick={delPostReq} className="absolute right-20 top-12"><TrashIcon className="h-7 w-7 fill-red-700"/></button>
+          <Link to="/blog" onClick={delPostReq} className="absolute right-20 top-12"><TrashIcon className="h-7 w-7 fill-red-700"/></Link>
           <Link to="/blog"><ArrowLeftIcon className="w-14 h-14 top-[7rem] left-[-8rem] mr-10 absolute fill-red-600"/></Link>
           <p className="text-left w-full text-sm">{`Admin • ${postObj?.date} • ${postObj?.duration} min read`}</p>
           <h1 className="text-5xl font-bold">{postObj?.title}</h1>
