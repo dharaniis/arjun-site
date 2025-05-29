@@ -56,6 +56,20 @@ app.post("/delPost", async (req, res) => {
       id: parseInt(req.body.id),
     },
   })
+});
+
+app.post("/editPost", async (req,res) => {
+  const clientDomain = req.headers.origin;
+  const updatePost = await prisma.blogposts.update({
+  where: {
+    id: parseInt(req.body.id),
+  },
+  data: {
+    title: req.body.title,
+    content: req.body.content,
+  },
+  });
+  res.redirect(`${clientDomain}/blogPostPage/${req.body.id}`)
 })
 
 app.listen(port, () => {
