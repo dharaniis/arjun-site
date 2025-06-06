@@ -122,7 +122,7 @@ const config = {
       "value": "prisma-client-js"
     },
     "output": {
-      "value": "/home/dharaniis/Documents/Documents/Web Dev/Projects/arjun-site/docker-test/generated/prisma",
+      "value": "/home/dharaniis/Documents/Documents/Web Dev/Projects/arjun-site/server/generated/prisma",
       "fromEnvVar": null
     },
     "config": {
@@ -136,11 +136,11 @@ const config = {
       }
     ],
     "previewFeatures": [],
-    "sourceFilePath": "/home/dharaniis/Documents/Documents/Web Dev/Projects/arjun-site/docker-test/prisma/schema.prisma",
+    "sourceFilePath": "/home/dharaniis/Documents/Documents/Web Dev/Projects/arjun-site/server/prisma/schema.prisma",
     "isCustomOutput": true
   },
   "relativeEnvPaths": {
-    "rootEnvPath": "../../.env",
+    "rootEnvPath": null,
     "schemaEnvPath": "../../.env"
   },
   "relativePath": "../../prisma",
@@ -150,11 +150,12 @@ const config = {
     "db"
   ],
   "activeProvider": "postgresql",
+  "postinstall": false,
   "inlineDatasources": {
     "db": {
       "url": {
         "fromEnvVar": "DATABASE_URL",
-        "value": "postgresql://postgres:prisma@localhost:5432/postgres?schema=public"
+        "value": null
       }
     }
   },

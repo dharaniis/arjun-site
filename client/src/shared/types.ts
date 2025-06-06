@@ -36,6 +36,7 @@ export interface ProgramDictType {
 }
 
 export interface BlogPostType {
+    id: number,
     date: string,
     duration: number,
     title: string,

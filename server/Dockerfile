@@ -7,4 +7,4 @@ COPY . .
 RUN npm ci
 
 
-CMD ["sh", "-c", "npm run db:deploy && npm run start"]
+CMD ["sh", "-c", "npm run start"]
