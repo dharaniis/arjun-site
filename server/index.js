@@ -69,7 +69,7 @@ app.post("/editPost", async (req,res) => {
     content: req.body.content,
   },
   });
-  res.redirect(`${clientDomain}/blogPostPage/${req.body.id}`)
+  res.redirect(`${clientDomain}/blog`)
 })
 
 app.listen(port, () => {

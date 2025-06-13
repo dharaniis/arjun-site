@@ -37,13 +37,11 @@ function BlogPostPage({}: Props) {
     <div className="bg-white">
       <Navbar/>
       <div className="py-24 flex justify-center items-center text-black font-sans text-center">
-        <div className="relative w-[60%] space-y-10 px-20 py-12 h-fit border border-black ">
-          <Link to="/blog" onClick={delPostReq} className="absolute right-20 top-12"><TrashIcon className="h-7 w-7 fill-red-700"/></Link>
+        <div className="relative w-[80%] md:w-[60%] space-y-10 px-10 md:px-20 py-12 h-fit border border-black ">
+          <p className="text-center md:text-left w-full text-xs md:text-sm">{`Admin • ${postObj?.date} • ${postObj?.duration} min read`}</p>
           <Link to="/blog"><ArrowLeftIcon className="w-14 h-14 top-[7rem] left-[-8rem] mr-10 absolute fill-red-600"/></Link>
-          <p className="text-left w-full text-sm">{`Admin • ${postObj?.date} • ${postObj?.duration} min read`}</p>
           <div className={`space-y-10 ${editMode && 'hidden'}`}>
-            <button onClick={()=>setEditMode(true)} className="absolute right-30 top-12"><PencilSquareIcon className="h-7 w-7 fill-red-700"/></button>
-            <h1 className="text-5xl font-bold">{postObj?.title}</h1>
+            <h1 className="text-3xl md:text-5xl font-bold">{postObj?.title}</h1>
             <p className="text-sm md:text-[17px]/8">{postObj?.content}</p>
           </div>
           <form className={`space-y-10 ${!editMode && 'hidden'}`} 
@@ -51,11 +49,15 @@ function BlogPostPage({}: Props) {
             method="POST"
           >
             <input name="id" className="hidden" value={id}/>
-            <textarea name="title" onChange={() => updateForm(event)} className="text-5xl font-bold resize-none" rows={4} value={postObj?.title} autoFocus={true}  
+            <textarea name="title" onChange={() => updateForm(event)} className="text-3xl  md:text-5xl font-bold resize-none w-[70%]" rows={4} value={postObj?.title} autoFocus={true}  
               />
-            <textarea name="content" onChange={() => updateForm(event)} contentEditable cols={75} rows={30} className="text-sm md:text-[17px]/8 resize-none" value={postObj?.content}/>
-            <button onClick={()=>setEditMode(false)} type="submit" className="absolute right-32 top-11"><CheckIcon className="h-10 w-10 fill-red-700"/></button>
+            <textarea name="content" onChange={() => updateForm(event)} contentEditable cols={75} rows={30} className="w-[80%] text-sm md:text-[17px]/8 resize-none" value={postObj?.content}/>
+            <button onClick={()=>setEditMode(false)} type="submit" className="absolute right-8 top-22 md:right-32 md:top-11"><CheckIcon className="h-10 w-10 fill-red-700"/></button>
           </form> 
+          <div className="flex justify-between">
+            <button onClick={()=>setEditMode(true)} className={`md:absolute right-30 top-12 ${editMode && 'hidden'}`}><PencilSquareIcon className="h-7 w-7 fill-red-700"/></button>
+            <Link to="/blog" onClick={delPostReq} className="md:absolute right-20 top-12"><TrashIcon className="h-7 w-7 fill-red-700"/></Link>
+          </div>
         </div>
       </div>
       <Footer/>
