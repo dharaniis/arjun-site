@@ -123,7 +123,7 @@ const config = {
       "value": "prisma-client-js"
     },
     "output": {
-      "value": "/home/dharaniis/Documents/Documents/Web Dev/Projects/arjun-site/docker-test/generated/prisma",
+      "value": "/home/dharaniis/Documents/Documents/Web Dev/Projects/arjun-site/server/generated/prisma",
       "fromEnvVar": null
     },
     "config": {
@@ -137,11 +137,11 @@ const config = {
       }
     ],
     "previewFeatures": [],
-    "sourceFilePath": "/home/dharaniis/Documents/Documents/Web Dev/Projects/arjun-site/docker-test/prisma/schema.prisma",
+    "sourceFilePath": "/home/dharaniis/Documents/Documents/Web Dev/Projects/arjun-site/server/prisma/schema.prisma",
     "isCustomOutput": true
   },
   "relativeEnvPaths": {
-    "rootEnvPath": "../../.env",
+    "rootEnvPath": null,
     "schemaEnvPath": "../../.env"
   },
   "relativePath": "../../prisma",
@@ -151,16 +151,17 @@ const config = {
     "db"
   ],
   "activeProvider": "postgresql",
+  "postinstall": false,
   "inlineDatasources": {
     "db": {
       "url": {
         "fromEnvVar": "DATABASE_URL",
-        "value": "postgresql://postgres:prisma@localhost:5432/postgres?schema=public"
+        "value": null
       }
     }
   },
-  "inlineSchema": "// This is your Prisma schema file,\n// learn more about it in the docs: https://pris.ly/d/prisma-schema\n\n// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?\n// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init\n\ngenerator client {\n  provider = \"prisma-client-js\"\n  output   = \"../generated/prisma\"\n}\n\ndatasource db {\n  provider = \"postgresql\"\n  url      = env(\"DATABASE_URL\")\n}\n\nmodel blogposts {\n  id       Int    @id @default(autoincrement())\n  title    String @db.VarChar(60)\n  content  String @db.VarChar(5000)\n  duration Int\n  date     String @db.VarChar(35)\n}\n",
-  "inlineSchemaHash": "2c2d02ac53b8265437692891c182637fe57b804e5c23c5e84d3d0491e4639062",
+  "inlineSchema": "generator client {\n  provider = \"prisma-client-js\"\n  output   = \"../generated/prisma\"\n}\n\ndatasource db {\n  provider = \"postgresql\"\n  url      = env(\"DATABASE_URL\")\n}\n\nmodel blogposts {\n  id       Int    @id @default(autoincrement())\n  title    String @db.VarChar(60)\n  content  String @db.VarChar(5000)\n  duration Int\n  date     String @db.VarChar(35)\n}\n",
+  "inlineSchemaHash": "382d834859a4ef8685c2c7a84215573365e57c8d8809979be11d700eb1191c4a",
   "copyEngine": true
 }
 
